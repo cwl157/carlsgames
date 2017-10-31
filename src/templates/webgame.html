@@ -1,0 +1,27 @@
+<div ng-controller="webgameCtrl" id="webgameTmpl" class="container-fluid" ng-init="init()">
+<ng-include src="'/templates/partials/topnav.html'"></ng-include>
+<div ng-if="id == 1">
+<ng-include src="'/templates/partials/webgames/asciiinvaders.html'" onload="loadGame(1);"></ng-include>
+</div>
+<div ng-if="id == 2">
+    <ng-include src="'/templates/partials/webgames/brickbuster.html'" onload="loadGame(2);"></ng-include>
+    </div>
+<div ng-if="id == 3">
+    <ng-include src="'/templates/partials/webgames/allenfoodfrenzy.html'" onload="loadGame(3);"></ng-include>
+    </div>
+    <div ng-if="id == 4">
+    <ng-include src="'/templates/partials/webgames/allentheappleeater.html'" onload="loadGame(4);"></ng-include>
+    </div>
+    <div ng-if="id == 5">
+    <ng-include src="'/templates/partials/webgames/circusshooter.html'" onload="loadGame(5);"></ng-include>
+    </div>
+    <div ng-if="id == 6">
+    <ng-include src="'/templates/partials/webgames/dodgeball.html'" onload="loadGame(6);"></ng-include>
+    </div>
+     <div ng-if="id == 7">
+    <ng-include src="'/templates/partials/webgames/foodfrenzyslot.html'" onload="loadGame(7);"></ng-include>
+    </div>
+    <div ng-if="id == 8">
+    <ng-include src="'/templates/partials/webgames/tetroball.html'" onload="loadGame(8);"></ng-include>
+    </div>
+</div>
