@@ -1,0 +1,15 @@
+{
+  "name": "carls-games",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"start": "node .\\node_modules\\http-server-spa\\server.js .\\www\\ index.html 8080"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "http-server-spa": "^1.3.0"
+  }
+}

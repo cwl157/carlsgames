@@ -1,5 +1,11 @@
-<div ng-controller="webgameCtrl" id="webgameTmpl" class="container-fluid" ng-init="init()">
-<ng-include src="'/templates/partials/topnav.html'"></ng-include>
+<div ng-controller="webgameCtrl" id="webgameTmpl" class="container" ng-init="init()">
+<!-- <ng-include src="'/templates/partials/topnav.html'"></ng-include> -->
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Play</li>
+    </ol>
+  </nav>
 <div ng-if="id == 1">
 <ng-include src="'/templates/partials/webgames/asciiinvaders.html'" onload="loadGame(1);"></ng-include>
 </div>
